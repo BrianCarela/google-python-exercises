@@ -19,6 +19,19 @@ and run Python code; now you just need to learn Python!
 
 import sys
 
+# trying my own function
+def repeat(n, exclaim):
+  """
+  This is what large comments look like. Triple quotes
+  Anyways, this just repeats the input. Or adds it, depending on type
+  """
+
+  result = n * 3
+  if exclaim:
+    result = result + '!!!'
+  print result
+
+
 # Define a main() function that prints a little greeting.
 def main():
   # Get the name from the command line, using 'World' as a fallback.
@@ -26,9 +39,13 @@ def main():
     name = sys.argv[1]
   else:
     name = 'World'
+
+  repeat(name, True)
   print 'Whats gooooooood', name
-  print 'YAS BITCH'
-  print len(sys.argv)
+  # print 'YAS BITCH'
+  # print len(sys.argv)
+  # my name is hard coded here, and booleans need cap letters
+  repeat('Brian', True)
 
 # This is the standard boilerplate that calls the main() function.
 if __name__ == '__main__':
