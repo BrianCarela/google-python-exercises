@@ -25,7 +25,7 @@ def repeat(n, exclaim):
   This is what large comments look like. Triple quotes
   Anyways, this just repeats the input. Or adds it, depending on type
   """
-
+  # the * operator means repeat. Multiplies numbers, repeats strings
   result = n * 3
   if exclaim:
     result = result + '!!!'
@@ -40,6 +40,7 @@ def main():
   else:
     name = 'World'
 
+    # booleans begin with capital letters in Python
   repeat(name, True)
   print 'Whats gooooooood', name
   # print 'YAS BITCH'

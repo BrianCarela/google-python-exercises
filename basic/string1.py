@@ -25,7 +25,10 @@
 # and donuts(23) returns 'Number of donuts: many'
 def donuts(count):
   # +++your code here+++
-  return
+  if(count < 10):
+    return 'Number of donuts: ' + str(count)
+  elif(count >= 10):
+    return 'Number of donuts: many'
 
 
 # B. both_ends
@@ -91,7 +94,7 @@ def main():
   test(both_ends('a'), '')
   test(both_ends('xyz'), 'xyyz')
 
-  
+
   print
   print 'fix_start'
   test(fix_start('babble'), 'ba**le')
